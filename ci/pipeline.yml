@@ -2,7 +2,7 @@ resources:
 - name: flight-school
   type: git
   source:
-    uri: 
+    uri: https://github.com/Ahed91/flight-school
     branch: master
 
 jobs:

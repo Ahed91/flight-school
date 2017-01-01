@@ -46,4 +46,10 @@ RSpec.describe "The FlightSchool application" do
 
     expect(parsed_body["city"]).to eq("San Francisco")
   end
+
+  it "shows facts about a Palestine - Gaza airport" do
+    get "/airports/PSG"
+    expect(last_response).to be_ok
+    expect(last_response.body).to include("San Francisco")
+  end
 end
